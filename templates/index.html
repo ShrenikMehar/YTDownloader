@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YT Downloader</title>
+</head>
+<body>
+	<form method="POST">
+        {% csrf_token %}
+		<label for="url">Enter YouTube video URL:</label>
+		<input type="text" id="url" name="url"><br><br>
+		<input type="submit" value="Download">
+	</form>
+</body>
+</html>
